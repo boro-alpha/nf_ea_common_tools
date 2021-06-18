@@ -1,0 +1,2 @@
+include nf_ea_common_tools_source/resources/templates/empty_nf_ea_com.accdb
+include nf_ea_common_tools_source/resources/templates/empty.eapx

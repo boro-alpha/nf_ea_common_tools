@@ -1,0 +1,7 @@
+git+https://github.com/boro-alpha/nf_common.git
+git+https://github.com/boro-alpha/ea_interop_service.git
+pandas
+pyodbc
+networkx
+tqdm
+numpy
