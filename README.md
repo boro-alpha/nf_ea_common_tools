@@ -4,6 +4,10 @@ NF EA Common Tools is a reference library containing utility functions that are 
 
 **This project is currently closed, but can be sporadically updated by the BORO Development Team it in the future.**
 
+## Changes From Previous Version
+
+Code has been extended since the previous version.
+
 ## Execution
 
 * This code is a library, so not to be run on its own.

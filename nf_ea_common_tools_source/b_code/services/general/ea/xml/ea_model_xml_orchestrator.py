@@ -7,9 +7,9 @@ from nf_common_source.code.services.reporting_service.reporters.log_with_datetim
 
 from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.common_knowledge.collection_types.nf_ea_com_collection_types import \
     NfEaComCollectionTypes
-from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.nf_ea_com_processes.dataframes.ea_connectors_splitter import \
+from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.processes.dataframes.ea_connectors_splitter import \
     split_ea_connectors
-from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.nf_ea_com_processes.stereotypes.ea_model_load_helper import get_stereotype_usage_with_names_dataframe
+from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.processes.stereotypes.ea_model_load_helper import get_stereotype_usage_with_names_dataframe
 from xml.etree.ElementTree import Element
 from nf_ea_common_tools_source.b_code.services.general.ea.xml.nf_ea_xml_loaders.ea_packages_xml_loader import map_and_xml_load_ea_packages
 from nf_ea_common_tools_source.b_code.services.general.ea.xml.nf_ea_xml_loaders.ea_stereotype_usages_xml_loader import map_and_xml_load_ea_stereotype_usages

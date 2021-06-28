@@ -385,6 +385,9 @@ class NfEaSqlRegistries(
         objects_dataframe = \
             self.get_extended_t_object_dataframe()
 
+        # ea_guids_to_object_identifiers_dataframe = \
+        #     objects_dataframe[EaTObjectColumnTypes.T_OBJECT_EA_GUIDS.column_name, EaTObjectColumnTypes.T_OBJECT_IDS.column_name()]
+
         ea_guids_to_object_identifiers_dataframe = \
             DataFrame(
                 objects_dataframe[[EaTObjectColumnTypes.T_OBJECT_EA_GUIDS.nf_column_name, EaTObjectColumnTypes.T_OBJECT_IDS.nf_column_name]])

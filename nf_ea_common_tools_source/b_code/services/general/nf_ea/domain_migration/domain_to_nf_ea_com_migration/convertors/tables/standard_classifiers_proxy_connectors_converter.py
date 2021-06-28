@@ -4,7 +4,7 @@ from nf_common_source.code.nf.types.nf_column_types import NfColumnTypes
 from nf_ea_common_tools_source.b_code.nf_ea_common.common_knowledge.ea_element_types import EaElementTypes
 from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.common_knowledge.collection_types.nf_ea_com_collection_types import NfEaComCollectionTypes
 from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.common_knowledge.column_types.nf_ea_com_column_types import NfEaComColumnTypes
-from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.nf_ea_com_processes.dataframes.nf_ea_com_table_appender import append_nf_ea_com_table
+from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.processes.dataframes.nf_ea_com_table_appender import append_nf_ea_com_table
 
 
 def convert_typed_linked_table_to_classifiers_proxy_connectors(

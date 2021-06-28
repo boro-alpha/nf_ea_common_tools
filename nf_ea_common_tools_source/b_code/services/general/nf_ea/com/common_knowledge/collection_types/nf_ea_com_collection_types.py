@@ -5,7 +5,7 @@ from nf_common_source.code.nf.types.collection_types import CollectionTypes
 
 @unique
 class NfEaComCollectionTypes(
-    CollectionTypes):
+        CollectionTypes):
     EA_PACKAGES = auto()
     EA_CLASSIFIERS = auto()
     EA_ATTRIBUTES = auto()
@@ -42,6 +42,43 @@ class NfEaComCollectionTypes(
     SUMMARY_TABLE_BY_TYPE = auto()
     DEPENDENCY_DEPTHS_TABLE = auto()
     ANALYSIS_METRICS = auto()
+    # From model stats code
+    MODEL_STATS_GENERAL_CONNECTORS_BY_TYPE = auto()
+    MODEL_STATS_GENERAL_EDGES = auto()
+    MODEL_STATS_GENERAL_LEAVES = auto()
+    MODEL_STATS_GENERAL_NODES = auto()
+    MODEL_STATS_GENERAL_OBJECTS_BY_TYPE = auto()
+    MODEL_STATS_GENERAL_PATHS = auto()
+    MODEL_STATS_GENERAL_ROOTS = auto()
+    MODEL_STATS_GENERAL_SUMMARY_TABLE = auto()
+
+    MODEL_STATS_PROXY_PROCESS_CONNECTORS_BY_TYPE = auto()
+    MODEL_STATS_PROXY_PROCESS_EDGES = auto()
+    MODEL_STATS_PROXY_PROCESS_LEAVES = auto()
+    MODEL_STATS_PROXY_PROCESS_NODES = auto()
+    MODEL_STATS_PROXY_PROCESS_OBJECTS_BY_TYPE = auto()
+    MODEL_STATS_PROXY_PROCESS_PATHS = auto()
+    MODEL_STATS_PROXY_PROCESS_ROOTS = auto()
+    MODEL_STATS_PROXY_PROCESS_SUMMARY_TABLE = auto()
+
+    MODEL_STATS_FULL_DEPENDENCIES_EDGES = auto()
+    MODEL_STATS_FULL_DEPENDENCIES_LEAVES = auto()
+    MODEL_STATS_FULL_DEPENDENCIES_NODES = auto()
+    MODEL_STATS_FULL_DEPENDENCIES_PATHS = auto()
+    MODEL_STATS_FULL_DEPENDENCIES_ROOTS = auto()
+    MODEL_STATS_FULL_DEPENDENCIES_SUMMARY_TABLE = auto()
+
+    MODEL_STATS_FIRST_CLASS_RELATION_EDGES = auto()
+    MODEL_STATS_FIRST_CLASS_RELATION_LEAVES = auto()
+    MODEL_STATS_FIRST_CLASS_RELATION_NODES = auto()
+    MODEL_STATS_FIRST_CLASS_RELATION_ROOTS = auto()
+    MODEL_STATS_FIRST_CLASS_RELATION_IMPLICIT_EDGES = auto()
+
+    MODEL_STATS_HIGH_ORDER_TYPES_EDGES = auto()
+    MODEL_STATS_HIGH_ORDER_TYPES_LEAVES = auto()
+    MODEL_STATS_HIGH_ORDER_TYPES_NODES = auto()
+    MODEL_STATS_HIGH_ORDER_TYPES_ROOTS = auto()
+    MODEL_STATS_HIGH_ORDER_TYPES_IMPLICIT_EDGES = auto()
 
     @staticmethod
     def get_collection_type_from_name(
@@ -102,5 +139,42 @@ collection_name_mapping = \
         NfEaComCollectionTypes.EA_PACKAGE_CONTENTS_SUMMARY: 'ea_package_contents_summary',
         NfEaComCollectionTypes.SUMMARY_TABLE_BY_TYPE: 'summary_table_by_type',
         NfEaComCollectionTypes.DEPENDENCY_DEPTHS_TABLE: 'dependency_depths_table',
-        NfEaComCollectionTypes.ANALYSIS_METRICS: 'analysis_metrics'
+        NfEaComCollectionTypes.ANALYSIS_METRICS: 'analysis_metrics',
+        # From model stats code
+        NfEaComCollectionTypes.MODEL_STATS_GENERAL_CONNECTORS_BY_TYPE: 'general_connector_by_type',
+        NfEaComCollectionTypes.MODEL_STATS_GENERAL_EDGES: 'general_edges',
+        NfEaComCollectionTypes.MODEL_STATS_GENERAL_LEAVES: 'general_leaves',
+        NfEaComCollectionTypes.MODEL_STATS_GENERAL_NODES: 'general_nodes',
+        NfEaComCollectionTypes.MODEL_STATS_GENERAL_OBJECTS_BY_TYPE: 'general_objects_by_type',
+        NfEaComCollectionTypes.MODEL_STATS_GENERAL_PATHS: 'general_paths',
+        NfEaComCollectionTypes.MODEL_STATS_GENERAL_ROOTS: 'general_roots',
+        NfEaComCollectionTypes.MODEL_STATS_GENERAL_SUMMARY_TABLE: 'general_summary_table',
+
+        NfEaComCollectionTypes.MODEL_STATS_PROXY_PROCESS_CONNECTORS_BY_TYPE: 'proxies_connector_by_type',
+        NfEaComCollectionTypes.MODEL_STATS_PROXY_PROCESS_EDGES: 'proxies_edges',
+        NfEaComCollectionTypes.MODEL_STATS_PROXY_PROCESS_LEAVES: 'proxies_leaves',
+        NfEaComCollectionTypes.MODEL_STATS_PROXY_PROCESS_NODES: 'proxies_nodes',
+        NfEaComCollectionTypes.MODEL_STATS_PROXY_PROCESS_OBJECTS_BY_TYPE: 'proxies_objects_by_type',
+        NfEaComCollectionTypes.MODEL_STATS_PROXY_PROCESS_PATHS: 'proxies_paths',
+        NfEaComCollectionTypes.MODEL_STATS_PROXY_PROCESS_ROOTS: 'proxies_roots',
+        NfEaComCollectionTypes.MODEL_STATS_PROXY_PROCESS_SUMMARY_TABLE: 'proxies_summary_table',
+
+        NfEaComCollectionTypes.MODEL_STATS_FULL_DEPENDENCIES_EDGES: 'full_dependencies_edges',
+        NfEaComCollectionTypes.MODEL_STATS_FULL_DEPENDENCIES_LEAVES: 'full_dependencies_leaves',
+        NfEaComCollectionTypes.MODEL_STATS_FULL_DEPENDENCIES_NODES: 'full_dependencies_nodes',
+        NfEaComCollectionTypes.MODEL_STATS_FULL_DEPENDENCIES_PATHS: 'full_dependencies_paths',
+        NfEaComCollectionTypes.MODEL_STATS_FULL_DEPENDENCIES_ROOTS: 'full_dependencies_roots',
+        NfEaComCollectionTypes.MODEL_STATS_FULL_DEPENDENCIES_SUMMARY_TABLE: 'full_dependencies_summary_table',
+
+        NfEaComCollectionTypes.MODEL_STATS_FIRST_CLASS_RELATION_EDGES: 'FCR_edges',
+        NfEaComCollectionTypes.MODEL_STATS_FIRST_CLASS_RELATION_LEAVES: 'FCR_leaves',
+        NfEaComCollectionTypes.MODEL_STATS_FIRST_CLASS_RELATION_NODES: 'FCR_nodes',
+        NfEaComCollectionTypes.MODEL_STATS_FIRST_CLASS_RELATION_ROOTS: 'FCR_roots',
+        NfEaComCollectionTypes.MODEL_STATS_FIRST_CLASS_RELATION_IMPLICIT_EDGES: 'FCR_implicit_edges',
+
+        NfEaComCollectionTypes.MODEL_STATS_HIGH_ORDER_TYPES_EDGES: 'HOT_edges',
+        NfEaComCollectionTypes.MODEL_STATS_HIGH_ORDER_TYPES_LEAVES: 'HOT_leaves',
+        NfEaComCollectionTypes.MODEL_STATS_HIGH_ORDER_TYPES_NODES: 'HOT_nodes',
+        NfEaComCollectionTypes.MODEL_STATS_HIGH_ORDER_TYPES_ROOTS: 'HOT_roots',
+        NfEaComCollectionTypes.MODEL_STATS_HIGH_ORDER_TYPES_IMPLICIT_EDGES: 'HOT_implicit_edges',
     }

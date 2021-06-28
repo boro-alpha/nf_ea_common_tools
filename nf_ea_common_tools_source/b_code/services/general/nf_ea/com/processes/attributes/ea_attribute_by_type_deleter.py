@@ -4,7 +4,7 @@ from nf_common_source.code.nf.types.nf_column_types import NfColumnTypes
 from nf_ea_common_tools_source.b_code.nf_ea_common.objects.ea_repositories import EaRepositories
 from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.common_knowledge.column_types.nf_ea_com_column_types import \
     NfEaComColumnTypes
-from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.nf_ea_com_processes.attributes.nf_ea_attribute_remover import \
+from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.processes.attributes.nf_ea_attribute_remover import \
     remove_nf_ea_attribute
 from nf_ea_common_tools_source.b_code.services.session.orchestrators.ea_tools_session_managers import \
     EaToolsSessionManagers

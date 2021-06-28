@@ -495,23 +495,14 @@ class NfEaComUniverseManagers(
 
         nf_ea_com_universe.nf_ea_com_registry.create_or_update_nf_ea_com_summary_table()
 
-    def create_dependency_depths_table(
+    def create_model_stats_tables(
             self,
             ea_repository: EaRepositories):
         nf_ea_com_universe = \
             self.__get_nf_ea_com_universe(
                 ea_repository=ea_repository)
 
-        nf_ea_com_universe.nf_ea_com_registry.create_or_update_dependency_depths_table()
-
-    def create_analysis_metrics_table(
-            self,
-            ea_repository: EaRepositories):
-        nf_ea_com_universe = \
-            self.__get_nf_ea_com_universe(
-                ea_repository=ea_repository)
-
-        nf_ea_com_universe.nf_ea_com_registry.create_analysis_metrics_table()
+        nf_ea_com_universe.nf_ea_com_registry.create_model_stats_tables()
 
     def __get_nf_ea_com_universe(
             self,

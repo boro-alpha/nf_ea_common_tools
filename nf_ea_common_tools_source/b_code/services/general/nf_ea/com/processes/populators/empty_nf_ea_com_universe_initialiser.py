@@ -3,9 +3,7 @@ from pandas import read_sql_query
 import importlib
 import os
 import pyodbc
-
-from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.common_knowledge.collection_types.nf_ea_com_collection_types import \
-    NfEaComCollectionTypes
+from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.common_knowledge.collection_types.nf_ea_com_collection_types import NfEaComCollectionTypes
 
 
 def create_empty_nf_ea_com_dictionary_of_collections() \

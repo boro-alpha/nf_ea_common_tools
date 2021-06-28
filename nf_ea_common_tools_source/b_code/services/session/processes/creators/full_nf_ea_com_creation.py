@@ -53,8 +53,5 @@ def create_full_nf_ea_com(
     nf_ea_com_universe_manager.get_ea_stereotypes(
         ea_repository=ea_repository)
 
-    nf_ea_com_universe_manager.create_dependency_depths_table(
-        ea_repository=ea_repository)
-
-    nf_ea_com_universe_manager.create_analysis_metrics_table(
-        ea_repository=ea_repository)
+    # nf_ea_com_universe_manager.create_model_stats_tables(
+    #     ea_repository=ea_repository)

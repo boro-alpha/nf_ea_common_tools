@@ -49,8 +49,11 @@ from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.factories.sub_u
 from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.factories.sub_universes.stereotypes_of_group_factories import StereotypesOfGroupFactories
 from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.factories.sub_universes.table_sub_types_factories import TableSubTypesFactories
 from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.factories.summaries.ea_package_contents_summary_factories import EaPackageContentsSummaryFactories
-from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.nf_ea_com_processes.model_depths.model_depths_orchestrator import orchestrate_depths
-from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.nf_ea_com_processes.populators.empty_nf_ea_com_universe_initialiser import create_empty_nf_ea_com_dictionary_of_collections
+from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.processes.model_stats.common.common_data_visualisation.model_stats_tables_to_nf_ea_com_registry_adder import \
+    add_model_stats_tables_to_nf_ea_com_registry
+from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.processes.model_stats.orchestrators.get_model_stats_orchestrator import \
+    orchestrate_get_model_stats
+from nf_ea_common_tools_source.b_code.services.general.nf_ea.com.processes.populators.empty_nf_ea_com_universe_initialiser import create_empty_nf_ea_com_dictionary_of_collections
 from pandas import concat
 from pandas import DataFrame
 
@@ -78,21 +81,15 @@ class NfEaComRegistries(
         return \
             self_copy
 
-    def create_analysis_metrics_table(
+    def create_model_stats_tables(
             self):
-        analysis_metrics_table = \
-            DataFrame(
-                columns=[
-                    NfEaComColumnTypes.ANALYSIS_METRICS_METRICS.column_name,
-                    NfEaComColumnTypes.ANALYSIS_METRICS_VALUES.column_name])
+        model_stats_tables = \
+            orchestrate_get_model_stats(
+                nf_ea_com_registry=self)
 
-        self.dictionary_of_collections[NfEaComCollectionTypes.ANALYSIS_METRICS] = \
-            analysis_metrics_table
-
-    def create_or_update_dependency_depths_table(
-            self):
-        orchestrate_depths(
-            nf_ea_com_registry=self)
+        add_model_stats_tables_to_nf_ea_com_registry(
+            nf_ea_com_registry=self,
+            model_stats_tables=model_stats_tables)
 
     def create_or_update_nf_ea_com_summary_table(
             self):
