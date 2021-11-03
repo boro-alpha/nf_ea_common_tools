@@ -53,7 +53,8 @@ class ThinEaStereotypesFactories:
                 {
                     nf_uuids_column_name: nf_uuids_column_name,
                     extended_t_stereotypes_group_names_column_name: extended_t_stereotypes_group_names_column_name,
-                    EaTStereotypesColumnTypes.T_STEREOTYPES_APPLIES_TOS.nf_column_name: NfEaComColumnTypes.STEREOTYPE_APPLIES_TOS.column_name
+                    EaTStereotypesColumnTypes.T_STEREOTYPES_APPLIES_TOS.nf_column_name: NfEaComColumnTypes.STEREOTYPE_APPLIES_TOS.column_name,
+                    EaTStereotypesColumnTypes.T_STEREOTYPES_STYLES.nf_column_name: NfEaComColumnTypes.STEREOTYPE_STYLE.column_name
                 })
 
         return \
@@ -105,7 +106,8 @@ class ThinEaStereotypesFactories:
                 {
                     nf_uuids_column_name: nf_uuids_column_name,
                     stereotype_ea_stereotype_group_column_name: stereotype_ea_stereotype_group_column_name,
-                    NfEaComColumnTypes.STEREOTYPE_APPLIES_TOS.column_name: NfEaComColumnTypes.STEREOTYPE_APPLIES_TOS.column_name
+                    NfEaComColumnTypes.STEREOTYPE_APPLIES_TOS.column_name: NfEaComColumnTypes.STEREOTYPE_APPLIES_TOS.column_name,
+                    NfEaComColumnTypes.STEREOTYPE_STYLE.column_name: NfEaComColumnTypes.STEREOTYPE_STYLE.column_name
                 })
 
         ea_stereotypes = \

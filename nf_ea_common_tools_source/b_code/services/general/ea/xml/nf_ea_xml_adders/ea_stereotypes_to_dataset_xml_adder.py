@@ -52,6 +52,11 @@ def __add_ea_stereotype_to_xml_tree(
             owning_tuple=ea_stereotype_tuple,
             attribute_name=NfEaComColumnTypes.STEREOTYPE_APPLIES_TOS.column_name)
 
+    ea_stereotype_style = \
+        get_tuple_attribute_value_if_required(
+            owning_tuple=ea_stereotype_tuple,
+            attribute_name=NfEaComColumnTypes.STEREOTYPE_STYLE.column_name)
+
     if original_ea_guid == DEFAULT_NULL_VALUE:
         ea_stereotype_guid = \
             '{' + create_new_uuid() + '}'
@@ -72,6 +77,7 @@ def __add_ea_stereotype_to_xml_tree(
             EaTStereotypesColumnTypes.T_STEREOTYPES_NAMES.column_name: ea_stereotype_name,
             EaTStereotypesColumnTypes.T_STEREOTYPES_DESCRIPTIONS.column_name: ea_stereotype_notes,
             EaTStereotypesColumnTypes.T_STEREOTYPES_APPLIES_TOS.column_name: ea_stereotype_applies_to,
+            EaTStereotypesColumnTypes.T_STEREOTYPES_STYLES.column_name: ea_stereotype_style,
             EaTStereotypesColumnTypes.T_STEREOTYPES_MF_ENABLED.column_name: 'FALSE'
         }
 

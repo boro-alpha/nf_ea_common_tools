@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='nf_ea_common_tools',
-    version='0.1.0-alpha.1',
+    version='0.1.0-alpha.2',
     description='Nf EA Common Tools',
     author='Andrew Mitchell',
     author_email='mitchella@borogroup.co.uk',

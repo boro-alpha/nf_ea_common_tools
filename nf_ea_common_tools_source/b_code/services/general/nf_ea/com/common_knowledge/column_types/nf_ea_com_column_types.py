@@ -40,6 +40,7 @@ class NfEaComColumnTypes(
     STEREOTYPE_CLIENT_NF_UUIDS = auto()
     STEREOTYPE_NAMES = auto()
     STEREOTYPE_APPLIES_TOS = auto()
+    STEREOTYPE_STYLE = auto()
     STEREOTYPE_PROPERTY_TYPE = auto()
 
     def __column_name(
@@ -92,5 +93,6 @@ column_name_mapping = \
         NfEaComColumnTypes.STEREOTYPE_CLIENT_NF_UUIDS: 'client_nf_uuids',
         NfEaComColumnTypes.STEREOTYPE_NAMES: 'stereotype_names',
         NfEaComColumnTypes.STEREOTYPE_APPLIES_TOS: 'stereotype_applies_tos',
+        NfEaComColumnTypes.STEREOTYPE_STYLE: 'stereotype_style',
         NfEaComColumnTypes.STEREOTYPE_PROPERTY_TYPE: 'property_type'
     }

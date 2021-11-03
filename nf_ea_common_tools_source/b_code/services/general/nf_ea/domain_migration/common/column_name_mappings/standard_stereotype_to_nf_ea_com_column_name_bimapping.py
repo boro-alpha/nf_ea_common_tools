@@ -30,5 +30,6 @@ __standard_stereotype_to_nf_ea_com_column_name_bimapping = \
             StandardObjectTableColumnTypes.STEREOTYPE_GROUP_NF_UUIDS.column_name: NfEaComColumnTypes.STEREOTYPE_EA_STEREOTYPE_GROUP.column_name,
             StandardObjectTableColumnTypes.UML_OBJECT_NAMES.column_name: NfEaComColumnTypes.EXPLICIT_OBJECTS_EA_OBJECT_NAME.column_name,
             NfEaComColumnTypes.EXPLICIT_OBJECTS_EA_OBJECT_NOTES.column_name: NfEaComColumnTypes.EXPLICIT_OBJECTS_EA_OBJECT_NOTES.column_name,
-            NfEaComColumnTypes.EXPLICIT_OBJECTS_EA_GUID.column_name: NfEaComColumnTypes.EXPLICIT_OBJECTS_EA_GUID.column_name
+            NfEaComColumnTypes.EXPLICIT_OBJECTS_EA_GUID.column_name: NfEaComColumnTypes.EXPLICIT_OBJECTS_EA_GUID.column_name,
+            NfEaComColumnTypes.STEREOTYPE_STYLE.column_name: NfEaComColumnTypes.STEREOTYPE_STYLE.column_name
         })
